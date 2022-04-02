@@ -1,6 +1,6 @@
 <template>
   <carousel :autoplay="2000" :transition="800" :wrap-around="true">
-    <slide class="h-[380px]" v-for="(img, i) in images" :key="i">
+    <slide class="h-[180px] sm:h-[220px] md:h-[280px] lg:h-[320px] xl:h-[350px]" v-for="(img, i) in images" :key="i">
       <img class="object-cover h-full w-full" :src="img" alt="First slide" />
     </slide>
     <template #addons>

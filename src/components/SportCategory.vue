@@ -1,6 +1,6 @@
 <template>
 <div class="container mx-auto ">
-    <div class="grid grid-cols-4 gap-10">
+    <div class=" justify-items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
    <div v-for="(img,i) in images" :key="i" class="relative group  cursor-pointer h-[330px] w-[267px]">
        <img :src="img" class="w-full group-hover:opacity-60" />
        <button 
