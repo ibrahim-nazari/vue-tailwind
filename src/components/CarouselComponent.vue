@@ -4,7 +4,9 @@
       <img class="object-cover h-full w-full" :src="img" alt="First slide" />
     </slide>
     <template #addons>
+      <Navigation />
       <Pagination />
+  
     </template>
   </carousel>
 </template>
@@ -17,6 +19,7 @@ export default {
     Carousel,
     Slide,
     Pagination,
+    Navigation,
   },
   data() {
     return {
@@ -31,3 +34,12 @@ export default {
   },
 };
 </script>
+<style>
+.carousel__prev{
+  left:26px !important;
+}
+.carousel__next{
+  right:26px !important;
+}
+
+</style>
